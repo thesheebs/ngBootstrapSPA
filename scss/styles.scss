@@ -1,0 +1,137 @@
+// angular colors from
+// #de0032; light red
+// #c3002f; dark red
+
+// Horizontal gradient, from left to right
+@mixin linearGradient($left, $right){
+    background: $left; /* Old browsers */
+    background: -moz-linear-gradient(left,  $left 0%, $right 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left left, left right, color-stop(0%,$left), color-stop(100%,$right)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  $left 0%,$right 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  $left 0%,$right 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  $left 0%,$right 100%); /* IE10+ */
+    background: linear-gradient(to right,  $left 0%,$right 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+  // Vertical gradient, from top to bottom
+  @mixin horizontalGradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, top top, top bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+//Call gradient
+//@include linearGradient(#17a2b8, #34dfc7);
+//@include horizontalGradient(#17a2b8, #34dfc7);
+
+$font-stack: 'Raleway', sans-serif;
+
+body, html {
+  height: 100%;
+  font: 100% $font-stack;
+}
+
+#wrap {
+  min-height: 100%;
+  position: relative;
+}
+
+header h1{
+  padding: 100px 0;
+  text-align: center;
+  background-color: #de0032;
+  @include horizontalGradient(#de0032, #c3002f);
+  color: #fff;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  header h1 {
+  padding: 50px 0;
+  }
+}
+
+p {
+  max-width: 700px;
+  font-size: 2rem;
+  line-height: 35px;
+}
+
+.def {
+  font-size: 1.2rem;
+}
+
+a:hover, a:active, a:visited, a:focus {
+  text-decoration: none;
+  outline-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+// App Styling
+#app {
+  a {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-bottom: 3px solid #333;
+    padding: 50px 0;
+    font-style: normal;
+    font-size: 35px;
+    display: block;
+    color: #333;
+  }
+  a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  a:focus {
+    background-color: #e5e5e5;
+    color: #333;
+  }
+  a:visited {
+    background-color: #fff;
+  }
+
+  @media (max-width: 576px) {
+      header h1 {
+      padding:0;
+    }
+    a, p {
+      font-size: 1rem;
+      padding:0 5px;
+      margin: 0;
+      float: left;
+      text-align: center;
+    }
+  }
+}
+// view
+.view  {
+  padding-bottom: 100px;
+}
+
+// Footer
+.footer {
+  padding: 25px 0;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #d3d3d3;
+
+
+  p {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  a, a:hover, a:active, a:visited, a:focus {
+    color: #08b1f7;
+  }
+}

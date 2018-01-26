@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+
+    <!-- ionicons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- main.css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Font Raleway -->
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Raleway');
+    </style>
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+    <title>Angular Routing</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>
+          <i class="icon ion-social-angular-outline" id="ng"></i>
+          Angular Routing
+        </h1>
+      </header>
+
+      <!-- Angular App -->
+      <section id="app" ng-app="myApp">
+        <div class="container-fluid" id="links">
+          <div class="row text-center">
+            <div class="col-sm-3 p-0">
+              <div class="link">
+                <a href="#/!">
+                  <p>
+                    <i class="icon ion-social-html5-outline"></i>
+                  </p>
+                  <p>HTML</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 p-0">
+              <div class="link">
+                <a href="#!css">
+                  <p><i class="icon ion-social-css3-outline"></i></p>
+                  <p>CSS</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 p-0">
+              <div class="link">
+                <a href="#!js">
+                  <p><i class="icon ion-social-javascript-outline"></i></p>
+                  <p>JavaScript</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3 p-0">
+              <div class="link">
+                <a href="#!angular">
+                  <p><i class="icon ion-social-angular-outline"></i></p>
+                  <p>Angular</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Angular View -->
+        <div id="#view">
+          <div ng-view></div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container text-center">
+          <p>Hand coded by <a href="http://www.amyiruddy.com" target="_blank">Amy Ruddy</a></p>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
